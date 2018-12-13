@@ -1,4 +1,15 @@
-(Once app infra and REST API is running)
+(continued story from https://github.com/mukundha/hipster-apim-demo)
+
+Previously, the Hipster Shop Website has been spun up and configured as an Apigee-registered application with an associated API Key consuming an API Product which contains services such as:
+```
+productcatalogservice.default.svc.cluster.local
+recommendationservice.default.svc.cluster.local
+currencyservice.default.svc.cluster.local
+cartservice.default.svc.cluster.local
+```
+
+Now, we will continue to use the Hipster Shop REST API to create a new digital channel - a chat/voice assistant...
+
 
 1. Apigee
 - Create new spec
