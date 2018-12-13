@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="Verify-API-Key" version="SHA-512:ef6ee5aff4dd7549c9fd0d319711065f052b706ed38d67363b5d67aa54eaa0c2c6257e58f01c79aff3d17927724c9dd3f23e7f1248713a3c4d174e5410db0a42"/>
+        <VersionInfo resourceName="add-cors" version="SHA-512:52bbfc2e8b7fb33a67ceed04e5902c4c9cec39751102f5eb238416d948a69a9fc50d5f9e2af686e8ea54c21fb27e190c661012bc7cc76d59b33985855fcb4e32"/>
+        <VersionInfo resourceName="remove-header-authorization" version="SHA-512:bb51e553b4b66ee4313fbfc0eaa76f08f3db66f9bd05cce9a1dc6542bada0501291719372fb4468a0b7f85ecceaaf0f8a0a397560a14b05f32e87d95423befb7"/>
+    </Policies>
+    <ProxyEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:f514c5d20239fc3a722050c1e4b0bc5645f2835d95c11ec6168d8388d242a6fac85b318bc9ac01e8aa5b75e3a9c0ccb2a9c7ce694a54265f186ba016e11bf906"/>
+    </ProxyEndpoints>
+    <Resources>
+        <VersionInfo resourceName="openapi://association.json" version="SHA-512:76edd3ab30513e3bdf95429d2f16e381d32296782929d5ec922c352004c3d5d62bb5419e1e84d1d27183ad05bf3acbe78c756f26e379ef3c83d2100a970a0308"/>
+    </Resources>
+    <SharedFlows/>
+    <TargetEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:972474e64d9cedef15eae09d52d107f83abdb8ea0a2a1186ebeafac78406c22506ccc0ee47fbaeaf1fee86ff06c9cfb7fa8ea03b1cde524809b88debefdd9e9c"/>
+    </TargetEndpoints>
+</Manifest>
