@@ -1,0 +1,28 @@
+{
+  "id": "8dfb39b1-aa4b-4da0-984c-5f7e883f4487",
+  "name": "What can you do",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1542361256,
+  "fallbackIntent": false,
+  "events": []
+}

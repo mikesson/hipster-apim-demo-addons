@@ -1,0 +1,41 @@
+{
+  "id": "073f93de-c036-4c79-806f-bb79577a1830",
+  "parentId": "f1efee48-1829-4045-bbd8-c39947729bff",
+  "rootParentId": "057cde1a-8959-448e-99b8-a2b5be6d4b93",
+  "name": "Check Product Exists and Add to Cart",
+  "auto": true,
+  "contexts": [
+    "Recommendations-InterestedinanyproductYes-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Recommendations.Recommendations-yes.Recommendations-InterestedinanyproductYes-custom",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "d36539e6-263f-4d7f-a26a-080a81119f63",
+          "dataType": "@product_name",
+          "name": "product_name",
+          "value": "$product_name",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1542365575,
+  "fallbackIntent": false,
+  "events": []
+}

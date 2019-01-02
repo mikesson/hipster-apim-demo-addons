@@ -1,0 +1,39 @@
+{
+  "id": "f1efee48-1829-4045-bbd8-c39947729bff",
+  "parentId": "057cde1a-8959-448e-99b8-a2b5be6d4b93",
+  "rootParentId": "057cde1a-8959-448e-99b8-a2b5be6d4b93",
+  "name": "Recommendations - Interested in any product? Yes",
+  "auto": true,
+  "contexts": [
+    "Recommendations-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Recommendations.Recommendations-yes",
+      "affectedContexts": [
+        {
+          "name": "Recommendations-InterestedinanyproductYes-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1542361919,
+  "fallbackIntent": false,
+  "events": []
+}

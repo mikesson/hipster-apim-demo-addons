@@ -1,0 +1,62 @@
+[
+  {
+    "id": "8ad4c46c-626d-464a-bd4d-8f4e059450af",
+    "data": [
+      {
+        "text": "what commands do you know",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1542361256
+  },
+  {
+    "id": "12d5e30e-89d1-4e3b-bae3-9760664d2587",
+    "data": [
+      {
+        "text": "what actions are available",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1542361256
+  },
+  {
+    "id": "8b04510d-86e6-4300-a60c-a2eeb394eb93",
+    "data": [
+      {
+        "text": "what is possible to do",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1542361256
+  },
+  {
+    "id": "77beb04c-0611-41ae-b72b-4ea8e673f0cb",
+    "data": [
+      {
+        "text": "what can I do",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1542361256
+  },
+  {
+    "id": "d48cf72f-71e4-44a8-9e26-41e458353427",
+    "data": [
+      {
+        "text": "what can you do",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1542361256
+  }
+]

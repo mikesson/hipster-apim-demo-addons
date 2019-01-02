@@ -1,0 +1,52 @@
+[
+  {
+    "id": "b3c64b7f-d6de-4f96-bc43-2ebabbfd6e09",
+    "data": [
+      {
+        "text": "the ",
+        "userDefined": false
+      },
+      {
+        "text": "product_name",
+        "alias": "product_name",
+        "meta": "@product_name",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1542365575
+  },
+  {
+    "id": "c6d63c93-5a97-433f-94d6-ae1774bef9e1",
+    "data": [
+      {
+        "text": "select ",
+        "userDefined": false
+      },
+      {
+        "text": "product_name",
+        "alias": "product_name",
+        "meta": "@product_name",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1542365575
+  },
+  {
+    "id": "f9efb4b3-473c-403f-a89b-7a66f62dc84b",
+    "data": [
+      {
+        "text": "product_name",
+        "alias": "product_name",
+        "meta": "@product_name",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1542365575
+  }
+]

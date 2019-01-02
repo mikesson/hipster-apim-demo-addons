@@ -1,0 +1,28 @@
+{
+  "id": "620a38b2-2611-4382-8e65-c5985daff3e3",
+  "name": "select_product",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "you\u0027ve selected a product, we\u0027re one step further now"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1542223709,
+  "fallbackIntent": false,
+  "events": []
+}

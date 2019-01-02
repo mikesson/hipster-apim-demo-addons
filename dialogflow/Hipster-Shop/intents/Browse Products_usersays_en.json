@@ -1,0 +1,26 @@
+[
+  {
+    "id": "424bf203-64fb-4421-95be-f167730dcc44",
+    "data": [
+      {
+        "text": "list products",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 1541753509
+  },
+  {
+    "id": "1c087435-bfb9-4bd6-9c2f-da4a646657ea",
+    "data": [
+      {
+        "text": "browse products",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 1541086387
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "id": "b71b9475-f685-4e10-a32d-21f0f93fc159",
+  "parentId": "057cde1a-8959-448e-99b8-a2b5be6d4b93",
+  "rootParentId": "057cde1a-8959-448e-99b8-a2b5be6d4b93",
+  "name": "Recommendations - Interested in any product? No",
+  "auto": true,
+  "contexts": [
+    "Recommendations-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Recommendations.Recommendations-no",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1542361869,
+  "fallbackIntent": false,
+  "events": []
+}

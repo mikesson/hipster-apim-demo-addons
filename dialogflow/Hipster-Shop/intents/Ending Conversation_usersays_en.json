@@ -1,0 +1,110 @@
+[
+  {
+    "id": "12cb4702-dc49-4caa-a6f8-d9b02f44b761",
+    "data": [
+      {
+        "text": "end",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1542361360
+  },
+  {
+    "id": "a61c5c33-e3c2-4b37-9780-275fb1c01b3f",
+    "data": [
+      {
+        "text": "that\u0027s all",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1542361360
+  },
+  {
+    "id": "8f87231f-34ce-4421-8d9d-5a92ed7abb71",
+    "data": [
+      {
+        "text": "stop talking",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1542361360
+  },
+  {
+    "id": "be1a1c6e-cd32-4812-ab15-f919e945f515",
+    "data": [
+      {
+        "text": "stop",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1542361360
+  },
+  {
+    "id": "fa09c3d4-96ac-4d46-a359-d6087f441d79",
+    "data": [
+      {
+        "text": "quit",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1542361360
+  },
+  {
+    "id": "441ad253-0335-4e93-96be-1520f6954f38",
+    "data": [
+      {
+        "text": "exit",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1542361360
+  },
+  {
+    "id": "e2eebef4-4841-4cff-9014-19308a7d29e5",
+    "data": [
+      {
+        "text": "close",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1542361360
+  },
+  {
+    "id": "a7d5d5aa-a2ba-4f30-85c6-db486684992d",
+    "data": [
+      {
+        "text": "bye",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1542361360
+  },
+  {
+    "id": "02e0ccdf-cbf2-4f46-9d1c-e2c14bcb9721",
+    "data": [
+      {
+        "text": "that\u0027s all thank you",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1542361360
+  }
+]

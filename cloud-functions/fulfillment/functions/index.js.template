@@ -28,12 +28,12 @@ const {
 // DIALOGFLOW INIT ----------------------------------
 const app = dialogflow({
     debug: true,
-    client_id: 'dialogflow-dacqiw@hipster-shop-7b4d6.iam.gserviceaccount.com'
+    client_id: '<%dialogflow_client_id%>'
 })
 
 
 // STATIC VARIABLE DECLARATION ----------------------
-const API_HOST = 'https://demo8-test.apigee.net'
+const API_HOST = 'https://<%org%>-<%env%>.apigee.net'
 const API_BASE_PATH = '/api/hipstershop';
 const API_VERSION = '/v1';
 const API_BASE_URL = API_HOST + API_BASE_PATH + API_VERSION; // used as request default
@@ -46,7 +46,7 @@ const PATH_CHECKOUT = '/orders/checkout'; // that's a POST request
 
 //const URL_USERINFO = 'https://www.googleapis.com/oauth2/v3/userinfo';
 
-const API_KEY = 'HctSqnE1p8dtQqnnmXqelNvBja0FvMoi';
+const API_KEY = '<%apigee_api_key%>';
 
 const INTENT_WELCOME = 'Default Welcome Intent';
 const INTENT_RECOMMENDATIONS = 'Recommendations';

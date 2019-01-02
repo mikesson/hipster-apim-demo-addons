@@ -1,0 +1,28 @@
+{
+  "id": "95f79f52-fc9c-4140-9ab6-4b4123cf3196",
+  "name": "Ending Conversation",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1542361360,
+  "fallbackIntent": false,
+  "events": []
+}

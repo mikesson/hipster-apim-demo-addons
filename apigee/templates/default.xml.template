@@ -17,6 +17,6 @@
     <Flows/>
     <HTTPTargetConnection>
         <Properties/>
-        <URL>http://35.224.69.162/</URL>
+        <URL>http://<%BACKEND_GATEWAY_URL%></URL>
     </HTTPTargetConnection>
 </TargetEndpoint>
