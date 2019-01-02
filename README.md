@@ -23,7 +23,7 @@ Steps:
 (!TBD: IP address of target server to fetch from a previous variable to point to right ingress-IP in proxy bundle, and other API Proxy changes in general to make CORS work properly)
 
 
-- 1.1 Run init.sh script to (1) deploy API Proxy, (2) create API Product and (3) adjust API Spec
+- 1.1 Run the `1-apigee-init.sh` script to (1) deploy API Proxy, (2) create API Product and (3) adjust API Spec
 	- when promoted, enter your Apigee username and password
 	- when promoted, enter the target Apigee organization and environment
 	
@@ -65,7 +65,24 @@ Steps:
 
 2. Deploy Voice/Chat Assistant Application Infrastructure
 
-	- 2.1 Deploy fulfillment endpoint via Google Cloud Functions
+	- 2.1 DialogFlow - Import Project  
+		- Create new project: https://console.dialogflow.com/api-client/#/newAgent
+		- Select your existing Google Cloud project from the drop-down
+		- Set your time zone and select [Create]
+		- Once created, make the following changes to your project:
+			- Select API version V2
+			- Enable BETA features
+			- Check "Log interactions to Dialogflow" and "Log interactions to Google Cloud"
+			- Make sure you hit [Save] at the top afterwards
+		- Within the project settings (same section as above), select "Export and Import"
+		- Select [Import from ZIP] and find dialogflow/Hipster-Shop.zip
+		
+
+	- 2.2 Deploy fulfillment endpoint via Google Cloud Functions
+		- run the `2-configure-function.sh` and, when prompted, enter the following details:
+			- 
+			- 
+			- 
 		- npm install -g firebase-tools (beware npm permissions error)
 		- firebase login (popup appears - login and allow access)
 		- cd cloud-functions/fulfillment		
@@ -81,19 +98,14 @@ Steps:
 		- firebase use {your_project_id}
 		- before deploying to Functions, do an “npm install” to all missing modules to populate the package.json file
 		- deploy with “firebase deploy --only functions”
-		- after deployment it appears here: https://console.google.com/functions
+		- after deployment it appears here: https://console.cloud.google.com/functions
 		
-	- 2.2 Configure DialogFlow
-		- create new project https://console.dialogflow.com/api-client/#/newAgent
-		- enable both at LOG SETTINGS
-		- enable BETA features (maybe?)
-		- Select V2 API
+	- 2.3 Dialogflow - Update the Fulfillment URL
+		- Go to https://console.firebase.google.com/u/0/project/{your_project_id}/functions/list
+		- (Note: if the project can't be found, add/import the existing project ID into the Firebase console) 
+		- Copy the URL of the *hipstershopFulfillment* function
+		- Go to *Fulfillment* and paste the link into the URL field - hit [Save]
 	
-
-- haven’t found URL in Cloud Functions, so added (existing) project from list into Firebase, now under “Functions” you can see the URL
-
-- (include this URL in DialogFlow Fulfillment)
-
 ////////////old
 
 Apigee Edge UI:
