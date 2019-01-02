@@ -11,12 +11,43 @@ cartservice.default.svc.cluster.local
 Now, we will continue to use the Hipster Shop REST API to create a new digital channel - a chat/voice assistant...
 
 
+Prerequisites:
+- apigeetool (https://www.npmjs.com/package/apigeetool)
+
+
+Steps:
+
+1. Publish the Hipster Shop API via Apigee
+
+- 1.1 Run init.sh script to (1) deploy API Proxy, (2) create API Product and (3) adjust API Spec
+	- when promoted, enter your Apigee username and password
+	- when promoted, enter the target Apigee organization and environment
+	
+- 1.2 Upload API Spec
+	- The previous script created a new file under the directory /specs as *hipster-shop-{your_org}-{your_env}.yaml*
+	- Open the Edge UI and go to Develop > Specs
+	- Under [+ Spec], choose 'Import File' and select the file mentioned above
+	- Verify that the specification *hipster-shop-{your_org}-{your_env}* has been added
+
+- 1.3 Create API Portal
+	- Go to Publish > Portals
+	- Under [+ Portal], enter a name (e.g. Hipster Shop API Portal) and select CREATE
+	- Select the *API* section
+	- Select [+ API]
+	
+
+
 1. Apigee
-- Create new spec
+- 1.1 Create new spec
 	- import YAML
 	- save as ‘Hipster Shop’
-- Publish API Proxy
-	- tbd
+- 1.2 Deploy API Proxy and create API Product
+	- run ./apigee/init.sh
+	  (this will upload and deploy the Hipster Shop API Proxy and API Product)
+- 1.3 
+	
+(!TBD: IP address of target server to fetch from a previous variable to point to right ingress-IP)
+
 
 2. DialogFlow
 - create new project https://console.dialogflow.com/api-client/#/newAgent
