@@ -34,8 +34,15 @@ Steps:
 	- Under [+ Portal], enter a name (e.g. Hipster Shop API Portal) and select CREATE
 	- Select the *API* section
 	- Select [+ API]
+	- Select the "Hipster Shop API Product" and hit [Next >]
+	- Under *Spec Source*, select 'Choose a different spec', choose *hipster-shop-{your_org}-{your-env}* and hit [Select]
+	- Set Audience = Anonymous users
+	- (Optional) Under Image, hit Select > External Image, and paste the following URL: https://images.pexels.com/photos/1994/red-vintage-shoes-sport.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+	- Select [Add]
+	- Select [Finish]
 	
 
+	
 
 1. Apigee
 - 1.1 Create new spec
