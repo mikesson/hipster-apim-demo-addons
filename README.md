@@ -26,25 +26,32 @@ Now, we will continue to use the Hipster Shop REST API to create a new digital c
 
 `export GATEWAY_URL=http://$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.status.loadBalancer.ingress[0].ip}')`
 
-### - 1.2 Run the **1-apigee-init.sh** script to (1) deploy API Proxy, (2) create API Product and (3) adjust API Spec
-	- when promoted, enter your Apigee username and password
-	- when promoted, enter the target Apigee organization and environment
+### - 1.2 Run the **1-apigee-init.sh** script 
+the script is
+(1) deploying the API Proxy,
+(2) creating an API Product and
+(3) adjusting the API Spec to your environment
+	
+when promoted,
+	- enter your Apigee username and password
+	- enter the target Apigee organization and environment
 	
 ### - 1.3 Upload API Spec
-	- The previous script created a new file under the directory /specs as *hipster-shop-{your_org}-{your_env}.yaml*
+The previous script created a new file under the directory /specs as *hipster-shop-{your_org}-{your_env}.yaml*
 	- Open the Edge UI and go to Develop > Specs
 	- Under [+ Spec], choose 'Import File' and select the file mentioned above
 	- Verify that the specification *hipster-shop-{your_org}-{your_env}* has been added
 
 ### - 1.4 Create API Portal
-	- Go to Publish > Portals
+To create a new API Portal, go to Publish > Portals
 	- Under [+ Portal], enter a name (e.g. Hipster Shop API Portal) and select CREATE
 	- Select the *API* section
 	- Select [+ API]
 	- Select the "Hipster Shop API Product" and hit [Next >]
 	- Under *Spec Source*, select 'Choose a different spec', choose *hipster-shop-{your_org}-{your-env}* and hit [Select]
 	- Set Audience = Anonymous users
-	- (Optional) Under Image, hit Select > External Image, and paste the following URL: https://images.pexels.com/photos/1994/red-vintage-shoes-sport.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+	- (Optional) Under Image, hit Select > External Image, and paste the following URL: 
+`https://images.pexels.com/photos/1994/red-vintage-shoes-sport.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260`
 	- Select [Add]
 	- Select [Finish]
 	
