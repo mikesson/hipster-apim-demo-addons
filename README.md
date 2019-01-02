@@ -63,7 +63,7 @@ Steps:
 	- Verify that the API call returns a valid response (incl. JSON payload)
 	
 
-2. Develop/Deploy Voice/Chat Assistant Application Infrastructure
+2. Deploy Voice/Chat Assistant Application Infrastructure
 
 	- 2.1 Deploy fulfillment endpoint via Firebase/Google Cloud Functions
 		- npm install -g firebase-tools (beware npm permissions error)
