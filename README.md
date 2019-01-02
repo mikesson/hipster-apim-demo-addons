@@ -26,11 +26,11 @@ Now, we will continue to use the Hipster Shop REST API to create a new digital c
 
 `export GATEWAY_URL=http://$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.status.loadBalancer.ingress[0].ip}')`
 
-###  1.2 Run the **1-apigee-init.sh** script 
+###  1.2 Run the *1-apigee-init.sh* script 
 the script is
-(1) deploying the API Proxy,
-(2) creating an API Product and
-(3) adjusting the API Spec to your environment
+⋅⋅* deploying the API Proxy,
+⋅⋅* creating an API Product and
+⋅⋅* adjusting the API Spec to your environment
 	
 when promoted,
 	- enter your Apigee username and password
