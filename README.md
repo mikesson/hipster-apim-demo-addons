@@ -79,7 +79,7 @@ First of all, [create a new Dialogflow project](https://console.dialogflow.com/a
 - Select [Import from ZIP] and find dialogflow/Hipster-Shop.zip
 		
 ###  2.2 Deploy fulfillment endpoint via Google Cloud Functions
-- Install the Firebase CLI ([look here](https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally) to resolve permission errors during installation)
+- Install the Firebase CLI ([look here](https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally) to resolve permission errors during installation) with
 `npm install -g firebase-tools`
 - login with `firebase login`. A browser popup appears - login and allow access
 - `cd cloud-functions/fulfillment`		
