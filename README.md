@@ -33,9 +33,9 @@ When promoted, enter your Apigee (1) username, (2) password, target (3) organiza
 	
 ###  1.3 Upload API Spec
 The previous script created a new file under the directory /specs as *hipster-shop-{your_org}-{your_env}.yaml*
-	- Open the Edge UI and go to Develop > Specs
-	- Under [+ Spec], choose 'Import File' and select the file mentioned above
-	- Verify that the specification *hipster-shop-{your_org}-{your_env}* has been added
+- Open the Edge UI and go to Develop > Specs
+- Under [+ Spec], choose 'Import File' and select the file mentioned above
+- Verify that the specification *hipster-shop-{your_org}-{your_env}* has been added
 
 ###  1.4 Create API Portal
 To create a new API Portal, go to Publish > Portals
