@@ -22,7 +22,7 @@ Now, we will continue to use the Hipster Shop REST API to create a new digital c
 	
 (!TBD: IP address of target server to fetch from a previous variable to point to right ingress-IP in proxy bundle, and other API Proxy changes in general to make CORS work properly)
 
-### - 1.1 Store the Hipster Shop API's Gateway URL in an environment variable
+### 1.1 Store the Hipster Shop API's Gateway URL in an environment variable
 
 `export GATEWAY_URL=http://$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.status.loadBalancer.ingress[0].ip}')`
 
