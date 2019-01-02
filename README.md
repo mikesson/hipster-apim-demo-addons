@@ -65,22 +65,24 @@ Steps:
 
 2. Deploy Voice/Chat Assistant Application Infrastructure
 
-	- 2.1 Deploy fulfillment endpoint via Firebase/Google Cloud Functions
+	- 2.1 Deploy fulfillment endpoint via Google Cloud Functions
 		- npm install -g firebase-tools (beware npm permissions error)
-		- firebase login (popup appears)
-		- cd <your_dir>
+		- firebase login (popup appears - login and allow access)
+		- cd cloud-functions/fulfillment		
 		- firebase init
-			- select functions
+			- select "Functions: ..."
 			- select your firebase project
 			- select JavaScript
 			- select ESLint yes
 			- select Yes on NPM dependencies
 			-  wait for “firebase initialisation complete!” message
-		- open index.js within /functions
-		- (then I developed this index.js)
+		- open index.js within /functions (-)
+		- (then I developed this index.js) (-)
+		- firebase use {your_project_id}
 		- before deploying to Functions, do an “npm install” to all missing modules to populate the package.json file
 		- deploy with “firebase deploy --only functions”
 		- after deployment it appears here: https://console.google.com/functions
+		
 	- 2.2 Configure DialogFlow
 		- create new project https://console.dialogflow.com/api-client/#/newAgent
 		- enable both at LOG SETTINGS
