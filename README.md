@@ -19,6 +19,10 @@ Steps:
 
 1. Publish the Hipster Shop API via Apigee
 
+	
+(!TBD: IP address of target server to fetch from a previous variable to point to right ingress-IP in proxy bundle, and other API Proxy changes in general to make CORS work properly)
+
+
 - 1.1 Run init.sh script to (1) deploy API Proxy, (2) create API Product and (3) adjust API Spec
 	- when promoted, enter your Apigee username and password
 	- when promoted, enter the target Apigee organization and environment
@@ -41,51 +45,54 @@ Steps:
 	- Select [Add]
 	- Select [Finish]
 	
-
+- 1.4 Create Developer App (API Key)
+	- Under Publish > Portals > Hipster Shop API Portal, select *Live Portal (beta)* at the top right corner
+	- From within the developer portal, select *Sign In*
+	- Select *Create Account*
+	- Open your email account and select the verification link from the message being sent to you
+	- Login to the developer portal with your credentials
+	- Under your email address on the top right, select *My Apps*
+	- Select [+ New App]
+	- Enter "Hipster Voice App" as the app name and select the *Hipster Shop API Product* 
+	- Hit [Create]
+	- Copy the API Key to your clipboard
+	- Go to APIs > Hipster Shop API Product
+	- Select Authorize on the top left and select the App created before
+	- Close the Authorize window and select the GET /currencies resource from the left-side list
+	- Select *Execute* from the left testing tab
+	- Verify that the API call returns a valid response (incl. JSON payload)
 	
 
-1. Apigee
-- 1.1 Create new spec
-	- import YAML
-	- save as ‘Hipster Shop’
-- 1.2 Deploy API Proxy and create API Product
-	- run ./apigee/init.sh
-	  (this will upload and deploy the Hipster Shop API Proxy and API Product)
-- 1.3 
+2. Develop/Deploy Voice/Chat Assistant Application Infrastructure
+
+	- 2.1 Deploy fulfillment endpoint via Firebase/Google Cloud Functions
+		- npm install -g firebase-tools (beware npm permissions error)
+		- firebase login (popup appears)
+		- cd <your_dir>
+		- firebase init
+			- select functions
+			- select your firebase project
+			- select JavaScript
+			- select ESLint yes
+			- select Yes on NPM dependencies
+			-  wait for “firebase initialisation complete!” message
+		- open index.js within /functions
+		- (then I developed this index.js)
+		- before deploying to Functions, do an “npm install” to all missing modules to populate the package.json file
+		- deploy with “firebase deploy --only functions”
+		- after deployment it appears here: https://console.google.com/functions
+	- 2.2 Configure DialogFlow
+		- create new project https://console.dialogflow.com/api-client/#/newAgent
+		- enable both at LOG SETTINGS
+		- enable BETA features (maybe?)
+		- Select V2 API
 	
-(!TBD: IP address of target server to fetch from a previous variable to point to right ingress-IP)
-
-
-2. DialogFlow
-- create new project https://console.dialogflow.com/api-client/#/newAgent
-- enable both at LOG SETTINGS
-- enable BETA features (maybe?)
-- Select V2 API
-
-
-3. Prepare fulfilment (https://developers.google.com/actions/sdk/deploy-fulfillment)
-- npm install -g firebase-tools (beware npm permissions error)
-- firebase login (popup appears)
-- cd <your_dir>
-- firebase init
-	- select functions
-	- select your firebase project
-	- select JavaScript
-	- select ESLint yes
-	- select Yes on NPM dependencies
-	-  wait for “firebase initialisation complete!” message
-- open index.js within /functions
-- (then I developed this index.js)
-- before deploying to Functions, do an “npm install” to all missing modules to populate the package.json file
-- deploy with “firebase deploy --only functions”
-- after deployment it appears here: https://pantheon.corp.google.com/functions
-
 
 - haven’t found URL in Cloud Functions, so added (existing) project from list into Firebase, now under “Functions” you can see the URL
 
-- include this URL in DialogFlow Fulfillment
+- (include this URL in DialogFlow Fulfillment)
 
-
+////////////old
 
 Apigee Edge UI:
 - Created API spec
