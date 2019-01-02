@@ -23,7 +23,7 @@ Steps:
 (!TBD: IP address of target server to fetch from a previous variable to point to right ingress-IP in proxy bundle, and other API Proxy changes in general to make CORS work properly)
 
 
-- 1.1 Run the `1-apigee-init.sh` script to (1) deploy API Proxy, (2) create API Product and (3) adjust API Spec
+- 1.1 Run the **1-apigee-init.sh** script to (1) deploy API Proxy, (2) create API Product and (3) adjust API Spec
 	- when promoted, enter your Apigee username and password
 	- when promoted, enter the target Apigee organization and environment
 	
@@ -77,38 +77,25 @@ Steps:
 		- Within the project settings (same section as above), select "Export and Import"
 		- Select [Import from ZIP] and find dialogflow/Hipster-Shop.zip
 		
-
 	- 2.2 Deploy fulfillment endpoint via Google Cloud Functions
-		- run the `2-configure-function.sh` and, when prompted, enter the following details:
-			- 
-			- 
-			- 
 		- npm install -g firebase-tools (beware npm permissions error)
 		- firebase login (popup appears - login and allow access)
 		- cd cloud-functions/fulfillment		
-		- firebase init
-			- select "Functions: ..."
-			- select your firebase project
-			- select JavaScript
-			- select ESLint yes
-			- select Yes on NPM dependencies
-			-  wait for “firebase initialisation complete!” message
-		- open index.js within /functions (-)
-		- (then I developed this index.js) (-)
 		- firebase use {your_project_id}
 		- before deploying to Functions, do an “npm install” to all missing modules to populate the package.json file
+		- Adjust the functions JS file by run the **2-configure-function.sh** script
+		- Enter the following details:
+			- Dialogflow Client ID (a.k.a Service Account)
+			- Apigee Organization (same as before)
+			- Apigee Environment (same as before)
+			- API Key from App created via (Apigee) Developer Portal
 		- deploy with “firebase deploy --only functions”
-		- after deployment it appears here: https://console.cloud.google.com/functions
+		- after deployment, the function appears here: https://console.cloud.google.com/functions
 		
 	- 2.3 Dialogflow - Update the Fulfillment URL
 		- Go to https://console.firebase.google.com/u/0/project/{your_project_id}/functions/list
 		- (Note: if the project can't be found, add/import the existing project ID into the Firebase console) 
 		- Copy the URL of the *hipstershopFulfillment* function
 		- Go to *Fulfillment* and paste the link into the URL field - hit [Save]
-	
-////////////old
 
-Apigee Edge UI:
-- Created API spec
-- Create API Proxy w/ spec above (created API Product right away as part of wizard, test env only)
-- create developer app to get API key, inserted into index.js function
+
