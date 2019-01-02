@@ -9,13 +9,10 @@ else
       echo -e "\nTo auto-deploy the necessary configurations (API Proxy, API Product, App), please enter your Apigee username and  password as well as target organization (e.g. username-eval) and environment (e.g. test/prod).\n"
 fi
 
+mkdir -p apigee/proxies/apiproxy/targets
 cp apigee/templates/default.xml.template apigee/proxies/apiproxy/targets/default.xml
-cd apigee/proxies/apiproxy/targets
-sed -i '' 's/<%BACKEND_GATEWAY_URL%>/'"$GATEWAY_URL"'/g' default.xml
-cd ..
-cd ..
-cd ..
-cd ..
+sed -i '' 's/<%BACKEND_GATEWAY_URL%>/'"$GATEWAY_URL"'/g' apigee/proxies/apiproxy/targets/default.xml
+
 
 echo -e "Enter username:"
 read username
