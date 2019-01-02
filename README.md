@@ -11,32 +11,32 @@ cartservice.default.svc.cluster.local
 Now, we will continue to use the Hipster Shop REST API to create a new digital channel - a chat/voice assistant...
 
 
-Prerequisites:
+# Prerequisites:
 - apigeetool (https://www.npmjs.com/package/apigeetool)
 
 
-Steps:
+# Steps:
 
-1. Publish the Hipster Shop API via Apigee
+## 1. Publish the Hipster Shop API via Apigee
 
 	
 (!TBD: IP address of target server to fetch from a previous variable to point to right ingress-IP in proxy bundle, and other API Proxy changes in general to make CORS work properly)
 
-- 1.1 Store the Hipster Shop API's Gateway URL in an environment variable
+### - 1.1 Store the Hipster Shop API's Gateway URL in an environment variable
 
 `export GATEWAY_URL=http://$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.status.loadBalancer.ingress[0].ip}')`
 
-- 1.2 Run the **1-apigee-init.sh** script to (1) deploy API Proxy, (2) create API Product and (3) adjust API Spec
+### - 1.2 Run the **1-apigee-init.sh** script to (1) deploy API Proxy, (2) create API Product and (3) adjust API Spec
 	- when promoted, enter your Apigee username and password
 	- when promoted, enter the target Apigee organization and environment
 	
-- 1.3 Upload API Spec
+### - 1.3 Upload API Spec
 	- The previous script created a new file under the directory /specs as *hipster-shop-{your_org}-{your_env}.yaml*
 	- Open the Edge UI and go to Develop > Specs
 	- Under [+ Spec], choose 'Import File' and select the file mentioned above
 	- Verify that the specification *hipster-shop-{your_org}-{your_env}* has been added
 
-- 1.4 Create API Portal
+### - 1.4 Create API Portal
 	- Go to Publish > Portals
 	- Under [+ Portal], enter a name (e.g. Hipster Shop API Portal) and select CREATE
 	- Select the *API* section
@@ -48,7 +48,7 @@ Steps:
 	- Select [Add]
 	- Select [Finish]
 	
-- 1.5 Create Developer App (API Key)
+### - 1.5 Create Developer App (API Key)
 	- Under Publish > Portals > Hipster Shop API Portal, select *Live Portal (beta)* at the top right corner
 	- From within the developer portal, select *Sign In*
 	- Select *Create Account*
@@ -66,39 +66,39 @@ Steps:
 	- Verify that the API call returns a valid response (incl. JSON payload)
 	
 
-2. Deploy Voice/Chat Assistant Application Infrastructure
+## 2. Deploy Voice/Chat Assistant Application Infrastructure
 
-	- 2.1 DialogFlow - Import Project  
-		- Create new project: https://console.dialogflow.com/api-client/#/newAgent
-		- Select your existing Google Cloud project from the drop-down
-		- Set your time zone and select [Create]
-		- Once created, make the following changes to your project:
-			- Select API version V2
-			- Enable BETA features
-			- Check "Log interactions to Dialogflow" and "Log interactions to Google Cloud"
-			- Make sure you hit [Save] at the top afterwards
-		- Within the project settings (same section as above), select "Export and Import"
-		- Select [Import from ZIP] and find dialogflow/Hipster-Shop.zip
+### - 2.1 DialogFlow - Import Project  
+	- Create new project: https://console.dialogflow.com/api-client/#/newAgent
+	- Select your existing Google Cloud project from the drop-down
+	- Set your time zone and select [Create]
+	- Once created, make the following changes to your project:
+		- Select API version V2
+		- Enable BETA features
+		- Check "Log interactions to Dialogflow" and "Log interactions to Google Cloud"
+		- Make sure you hit [Save] at the top afterwards
+	- Within the project settings (same section as above), select "Export and Import"
+	- Select [Import from ZIP] and find dialogflow/Hipster-Shop.zip
 		
-	- 2.2 Deploy fulfillment endpoint via Google Cloud Functions
-		- npm install -g firebase-tools (beware npm permissions error)
-		- firebase login (popup appears - login and allow access)
-		- cd cloud-functions/fulfillment		
-		- firebase use {your_project_id}
-		- before deploying to Functions, do an “npm install” to all missing modules to populate the package.json file
-		- Adjust the functions JS file by run the **2-configure-function.sh** script
-		- Enter the following details:
-			- Dialogflow Client ID (a.k.a Service Account)
-			- Apigee Organization (same as before)
-			- Apigee Environment (same as before)
-			- API Key from App created via (Apigee) Developer Portal
-		- deploy with “firebase deploy --only functions”
-		- after deployment, the function appears here: https://console.cloud.google.com/functions
+### - 2.2 Deploy fulfillment endpoint via Google Cloud Functions
+	- npm install -g firebase-tools (beware npm permissions error)
+	- firebase login (popup appears - login and allow access)
+	- cd cloud-functions/fulfillment		
+	- firebase use {your_project_id}
+	- before deploying to Functions, do an “npm install” to all missing modules to populate the package.json file
+	- Adjust the functions JS file by run the **2-configure-function.sh** script
+	- Enter the following details:
+		- Dialogflow Client ID (a.k.a Service Account)
+		- Apigee Organization (same as before)
+		- Apigee Environment (same as before)
+		- API Key from App created via (Apigee) Developer Portal
+	- deploy with “firebase deploy --only functions”
+	- after deployment, the function appears here: https://console.cloud.google.com/functions
 		
-	- 2.3 Dialogflow - Update the Fulfillment URL
-		- Go to https://console.firebase.google.com/u/0/project/{your_project_id}/functions/list
-		- (Note: if the project can't be found, add/import the existing project ID into the Firebase console) 
-		- Copy the URL of the *hipstershopFulfillment* function
-		- Go to *Fulfillment* and paste the link into the URL field - hit [Save]
+### - 2.3 Dialogflow - Update the Fulfillment URL
+	- Go to https://console.firebase.google.com/u/0/project/{your_project_id}/functions/list
+	- (Note: if the project can't be found, add/import the existing project ID into the Firebase console) 
+	- Copy the URL of the *hipstershopFulfillment* function
+	- Go to *Fulfillment* and paste the link into the URL field - hit [Save]
 
 
