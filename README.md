@@ -22,11 +22,11 @@ Now, we will continue to use the Hipster Shop REST API to create a new digital c
 	
 (!TBD: IP address of target server to fetch from a previous variable to point to right ingress-IP in proxy bundle, and other API Proxy changes in general to make CORS work properly)
 
-### 1.1 Store the Hipster Shop API's Gateway URL in an environment variable
+###  1.1 Store the Hipster Shop API's Gateway URL in an environment variable
 
 `export GATEWAY_URL=http://$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.status.loadBalancer.ingress[0].ip}')`
 
-### - 1.2 Run the **1-apigee-init.sh** script 
+###  1.2 Run the **1-apigee-init.sh** script 
 the script is
 (1) deploying the API Proxy,
 (2) creating an API Product and
@@ -36,13 +36,13 @@ when promoted,
 	- enter your Apigee username and password
 	- enter the target Apigee organization and environment
 	
-### - 1.3 Upload API Spec
+###  1.3 Upload API Spec
 The previous script created a new file under the directory /specs as *hipster-shop-{your_org}-{your_env}.yaml*
 	- Open the Edge UI and go to Develop > Specs
 	- Under [+ Spec], choose 'Import File' and select the file mentioned above
 	- Verify that the specification *hipster-shop-{your_org}-{your_env}* has been added
 
-### - 1.4 Create API Portal
+###  1.4 Create API Portal
 To create a new API Portal, go to Publish > Portals
 	- Under [+ Portal], enter a name (e.g. Hipster Shop API Portal) and select CREATE
 	- Select the *API* section
@@ -55,7 +55,7 @@ To create a new API Portal, go to Publish > Portals
 	- Select [Add]
 	- Select [Finish]
 	
-### - 1.5 Create Developer App (API Key)
+###  1.5 Create Developer App (API Key)
 	- Under Publish > Portals > Hipster Shop API Portal, select *Live Portal (beta)* at the top right corner
 	- From within the developer portal, select *Sign In*
 	- Select *Create Account*
@@ -75,7 +75,7 @@ To create a new API Portal, go to Publish > Portals
 
 ## 2. Deploy Voice/Chat Assistant Application Infrastructure
 
-### - 2.1 DialogFlow - Import Project  
+###  2.1 DialogFlow - Import Project  
 	- Create new project: https://console.dialogflow.com/api-client/#/newAgent
 	- Select your existing Google Cloud project from the drop-down
 	- Set your time zone and select [Create]
@@ -87,7 +87,7 @@ To create a new API Portal, go to Publish > Portals
 	- Within the project settings (same section as above), select "Export and Import"
 	- Select [Import from ZIP] and find dialogflow/Hipster-Shop.zip
 		
-### - 2.2 Deploy fulfillment endpoint via Google Cloud Functions
+###  2.2 Deploy fulfillment endpoint via Google Cloud Functions
 	- npm install -g firebase-tools (beware npm permissions error)
 	- firebase login (popup appears - login and allow access)
 	- cd cloud-functions/fulfillment		
@@ -102,7 +102,7 @@ To create a new API Portal, go to Publish > Portals
 	- deploy with “firebase deploy --only functions”
 	- after deployment, the function appears here: https://console.cloud.google.com/functions
 		
-### - 2.3 Dialogflow - Update the Fulfillment URL
+###  2.3 Dialogflow - Update the Fulfillment URL
 	- Go to https://console.firebase.google.com/u/0/project/{your_project_id}/functions/list
 	- (Note: if the project can't be found, add/import the existing project ID into the Firebase console) 
 	- Copy the URL of the *hipstershopFulfillment* function
