@@ -95,7 +95,7 @@ First of all, [create a new Dialogflow project](https://console.dialogflow.com/a
 - after deployment, the function appears [here](https://console.cloud.google.com/functions)
 		
 ###  2.3 Dialogflow - Update the Fulfillment URL
-- Go to `https://console.firebase.google.com/u/0/project/**{your_project_id}**/functions/list`
+- Go to `https://console.firebase.google.com/u/0/project/`*{your_project_id}*`/functions/list`
 - (Note: if the project can't be found, add/import the existing project ID into the Firebase console) 
 - Copy the URL of the `hipstershopFulfillment` function
 - Go to [Fulfillment] and paste the link into the URL field - hit [Save]
