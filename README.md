@@ -1,4 +1,4 @@
-(continued story from https://github.com/mukundha/hipster-apim-demo)
+(continued story from https://github.com/mukundha/hipster-apim-demo / https://github.com/mukundha/hipster-apim-demo/tree/istio-grpc-transcode)
 
 Previously, the Hipster Shop Website has been spun up and configured as an Apigee-registered application with an associated API Key consuming an API Product which contains services such as:
 ```
