@@ -67,7 +67,7 @@ Under [Publish] > [Portals] > [Hipster Shop API Portal], select `Live Portal (be
 ## 2. Deploy Voice/Chat Assistant Application Infrastructure
 
 ###  2.1 DialogFlow - Import Project  
-First of all, [create new Dialogflow project](https://console.dialogflow.com/api-client/#/newAgent)
+First of all, [create a new Dialogflow project](https://console.dialogflow.com/api-client/#/newAgent)
 - Select your existing Google Cloud project from the drop-down
 - Set your time zone and select [Create]
 - Once created, make the following changes to your project:
