@@ -22,6 +22,8 @@ Steps:
 	
 (!TBD: IP address of target server to fetch from a previous variable to point to right ingress-IP in proxy bundle, and other API Proxy changes in general to make CORS work properly)
 
+- 1.1 Store the Hipster Shop API's Gateway URL in an environment variable
+	- `export GATEWAY_URL=http://$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.status.loadBalancer.ingress[0].ip}')`
 
 - 1.1 Run the **1-apigee-init.sh** script to (1) deploy API Proxy, (2) create API Product and (3) adjust API Spec
 	- when promoted, enter your Apigee username and password
