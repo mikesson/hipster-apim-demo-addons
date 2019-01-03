@@ -99,3 +99,8 @@ First of all, [create a new Dialogflow project](https://console.dialogflow.com/a
 - (Note: if the project can't be found, add/import the existing project ID into the Firebase console) 
 - Copy the URL of the `hipstershopFulfillment` function
 - Go to [Fulfillment] and paste the link into the URL field - hit [Save]
+
+### 2.4 Try it out
+- Open https://console.dialogflow.com, select your project (agent) and select *see how it works in Google Assistant* on the left hand side
+
+
