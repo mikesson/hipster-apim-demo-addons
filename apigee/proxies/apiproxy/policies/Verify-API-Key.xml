@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<VerifyAPIKey async="false" continueOnError="false" enabled="true" name="Verify-API-Key">
+<VerifyAPIKey async="false" continueOnError="false" enabled="false" name="Verify-API-Key">
     <DisplayName>Verify API Key</DisplayName>
     <FaultRules/>
     <Properties/>
