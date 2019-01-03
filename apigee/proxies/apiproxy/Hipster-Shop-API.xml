@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<APIProxy revision="2" name="Hipster-Shop-API">
+<APIProxy revision="1" name="Hipster-Shop-API">
     <Basepaths>/api/hipstershop/v1</Basepaths>
     <ConfigurationVersion majorVersion="4" minorVersion="0"/>
-    <CreatedAt>1544687723054</CreatedAt>
+    <CreatedAt>1546443041619</CreatedAt>
     <CreatedBy>mikeannau@google.com</CreatedBy>
-    <Description>Sample e-Commerce Hipster Shop API Proxy</Description>
+    <Description>Hipster-Shop-API</Description>
     <DisplayName>Hipster-Shop-API</DisplayName>
-    <LastModifiedAt>1544687723054</LastModifiedAt>
-    <LastModifiedBy>mikeannau@google.com</LastModifiedBy>
-    <ManifestVersion>SHA-512:96c3d052d0b8ab0e1e262db1249894f543204cac27a066f95b04df6bdff59c2575caf0733a5a211e428fe3fadc5ecb4398ad2f4e7defeb2c51bdc4cfc27cd31b</ManifestVersion>
+    <LastModifiedAt>1546522276013</LastModifiedAt>
+    <LastModifiedBy>defaultUser</LastModifiedBy>
+    <ManifestVersion>SHA-512:2f6636c29fffc57a7c32cac760925eb713413cc90646e130cb9872780af6d4a0806d156fcd2b3225072f2657eb2399154e639826372c86e352494b7cc1134cdb</ManifestVersion>
     <Policies>
+        <Policy>AM-FailedToResolveAPIKey</Policy>
         <Policy>Verify-API-Key</Policy>
         <Policy>add-cors</Policy>
         <Policy>remove-header-authorization</Policy>

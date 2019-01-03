@@ -2,19 +2,16 @@
 <TargetEndpoint name="default">
     <Description/>
     <FaultRules/>
-    <PreFlow name="PreFlow">
-        <Request/>
-        <Response>
-            <Step>
-                <Name>add-cors</Name>
-            </Step>
-        </Response>
-    </PreFlow>
+    <Flows>
+    </Flows>
     <PostFlow name="PostFlow">
         <Request/>
         <Response/>
     </PostFlow>
-    <Flows/>
+    <PreFlow name="PreFlow">
+        <Request/>
+        <Response/>
+    </PreFlow>
     <HTTPTargetConnection>
         <Properties/>
         <URL><%BACKEND_GATEWAY_URL%></URL>

@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<AssignMessage async="false" continueOnError="false" enabled="true" name="add-cors">
-    <DisplayName>Add CORS</DisplayName>
-    <FaultRules/>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AM-FailedToResolveAPIKey">
+    <DisplayName>AM-FailedToResolveAPIKey</DisplayName>
     <Properties/>
-    <Add>
+    <Set>
         <Headers>
             <Header name="Access-Control-Allow-Origin">{request.header.origin}</Header>
             <Header name="Access-Control-Allow-Headers">origin, x-requested-with, accept, apikey, content-type</Header>
             <Header name="Access-Control-Max-Age">3628800</Header>
             <Header name="Access-Control-Allow-Methods">GET, PUT, POST, DELETE</Header>
         </Headers>
-    </Add>
-    <Set>
-        <!--<Payload contentType="application/json">{"isPreflight":"true"}</Payload>-->
+        <Payload contentType="application/json">{"errorMessage":"Failed to Resolve API Key", "errorReference" : "https://docs.apigee.com/api-platform/tutorials/secure-calls-your-api-through-api-key-validation"}</Payload>
     </Set>
     <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
-    <AssignTo type="response" transport="http" createNew="false"/>
+    <AssignTo createNew="false" transport="http" type="response"/>
 </AssignMessage>

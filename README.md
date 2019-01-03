@@ -25,7 +25,7 @@ Now, we will continue to use the Hipster Shop REST API to create a new digital c
 
 ###  1.2 Run the *1-apigee-init.sh* script 
 The script is deploying the API Proxy, creating an API Product and adjusting the API Spec to your environment.
-	
+`./1-apigee-init.sh`
 When promoted, enter your Apigee (1) `username`, (2) `password`, target (3) `organization` and (4) `environment`.
 	
 ###  1.3 Upload API Spec
