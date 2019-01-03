@@ -35,6 +35,8 @@ The previous script created a new file under the directory `/specs` as `hipster-
 - Select the `hipster-shop-{your_org}-{your_env}` spec which has been added to the list
 - Verify that the host attribute contains the desired organization and environment
 
+![specs](https://github.com/mikesson/hipster-apim-demo_assistant-app/blob/master/img/specs.png?raw=true)
+
 ###  1.4 Create API Portal
 To create a new API Portal, go to [Publish] > [Portals]
 - Under [+ Portal], enter a name (e.g. Hipster Shop API Portal) and select [Create]
@@ -64,6 +66,9 @@ Under [Publish] > [Portals] > [Hipster Shop API Portal], select `Live Portal (be
 - Close the *Authorize* window and select the GET /currencies resource from the left-side list
 - Select *Execute* from the testing tab on the right
 - Verify that the API call returns a valid response (incl. JSON payload)
+
+![specs](https://github.com/mikesson/hipster-apim-demo_assistant-app/blob/master/img/portal_auth.png?raw=true)
+
 
 ## 2. Deploy Voice/Chat Assistant Application Infrastructure
 
@@ -100,6 +105,9 @@ First of all, [create a new Dialogflow project](https://console.dialogflow.com/a
 - (Note: if the project can't be found, add/import the existing project ID into the Firebase console) 
 - Copy the URL of the `hipstershopFulfillment` function
 - Go to [Fulfillment] and paste the link into the URL field - hit [Save]
+
+![specs](https://github.com/mikesson/hipster-apim-demo_assistant-app/blob/master/img/function_url.png?raw=true)
+
 
 ### 2.4 Try it out
 - Open https://console.dialogflow.com, select your project (agent) and select *see how it works in Google Assistant* on the left hand side
