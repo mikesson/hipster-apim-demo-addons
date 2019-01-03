@@ -11,7 +11,7 @@ fi
 
 mkdir -p apigee/proxies/apiproxy/targets
 cp apigee/templates/default.xml.template apigee/proxies/apiproxy/targets/default.xml
-sed -i '' 's/<%BACKEND_GATEWAY_URL%>/'"$GATEWAY_URL"'/g' apigee/proxies/apiproxy/targets/default.xml
+sed -i '' 's~<%BACKEND_GATEWAY_URL%>~'"$GATEWAY_URL"'~g' apigee/proxies/apiproxy/targets/default.xml
 
 
 echo -e "Enter username:"
