@@ -115,7 +115,7 @@ First of all, [create a new Dialogflow project](https://console.dialogflow.com/a
 
 ![try_assistant](https://github.com/mikesson/hipster-apim-demo_assistant-app/blob/master/img/try_google_assistant.png?raw=true)
 
-- You can now test the assistant via the chat app and review the analytics on Apigee, e.g. with the traffic composition dashboard (https://apigee.com/platform/{your_org}/trafficcomposition)
-
-
 ![chat_app](https://github.com/mikesson/hipster-apim-demo_assistant-app/blob/master/img/ads.png?raw=true)
+
+
+- You can now test the assistant via the chat app and review the analytics on Apigee, e.g. with the traffic composition dashboard (https://apigee.com/platform/{your_org}/trafficcomposition)
