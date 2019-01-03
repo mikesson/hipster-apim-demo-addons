@@ -3,6 +3,16 @@
     <Description/>
     <FaultRules/>
     <Flows>
+        <Flow name="NoOptionsPreflight">
+            <Description/>
+            <Request/>
+            <Response>
+                <Step>
+                    <Name>add-cors</Name>
+                </Step>
+            </Response>
+            <Condition>request.verb != "OPTIONS"</Condition>
+        </Flow>
     </Flows>
     <PostFlow name="PostFlow">
         <Request/>

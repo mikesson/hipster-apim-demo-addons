@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<APIProxy revision="1" name="Hipster-Shop-API">
+<APIProxy revision="3" name="Hipster-Shop-API">
+    <Basepaths>/api/hipstershop/v1</Basepaths>
     <Basepaths>/api/hipstershop/v1</Basepaths>
     <ConfigurationVersion majorVersion="4" minorVersion="0"/>
     <CreatedAt>1546443041619</CreatedAt>
     <CreatedBy>mikeannau@google.com</CreatedBy>
     <Description>Hipster-Shop-API</Description>
     <DisplayName>Hipster-Shop-API</DisplayName>
-    <LastModifiedAt>1546522276013</LastModifiedAt>
+    <LastModifiedAt>1546528883905</LastModifiedAt>
     <LastModifiedBy>defaultUser</LastModifiedBy>
-    <ManifestVersion>SHA-512:2f6636c29fffc57a7c32cac760925eb713413cc90646e130cb9872780af6d4a0806d156fcd2b3225072f2657eb2399154e639826372c86e352494b7cc1134cdb</ManifestVersion>
+    <ManifestVersion>SHA-512:61784072f00c88b9a47cf45b81c34f5d5cbe918b0819ee84f9aec956fbcb9a4c3738932f742b1a0aafcda0533ee157feb256faea38a5a58ca9996f86aec714d2</ManifestVersion>
     <Policies>
         <Policy>AM-FailedToResolveAPIKey</Policy>
         <Policy>Verify-API-Key</Policy>

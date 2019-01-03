@@ -11,9 +11,7 @@
             <Header name="Access-Control-Allow-Methods">GET, PUT, POST, DELETE</Header>
         </Headers>
     </Add>
-    <Set>
-        <!--<Payload contentType="application/json">{"isPreflight":"true"}</Payload>-->
-    </Set>
+    <Set/>
     <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
-    <AssignTo type="response" transport="http" createNew="false"/>
+    <AssignTo type="response" transport="http" createNew="false"></AssignTo>
 </AssignMessage>

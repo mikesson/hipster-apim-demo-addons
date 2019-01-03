@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <AssignMessage async="false" continueOnError="false" enabled="true" name="AM-FailedToResolveAPIKey">
     <DisplayName>AM-FailedToResolveAPIKey</DisplayName>
+    <FaultRules/>
     <Properties/>
     <Set>
         <Headers>
@@ -12,5 +13,5 @@
         <Payload contentType="application/json">{"errorMessage":"Failed to Resolve API Key", "errorReference" : "https://docs.apigee.com/api-platform/tutorials/secure-calls-your-api-through-api-key-validation"}</Payload>
     </Set>
     <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
-    <AssignTo createNew="false" transport="http" type="response"/>
+    <AssignTo type="response" transport="http" createNew="false"></AssignTo>
 </AssignMessage>
