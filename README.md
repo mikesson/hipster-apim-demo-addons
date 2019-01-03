@@ -102,5 +102,5 @@ First of all, [create a new Dialogflow project](https://console.dialogflow.com/a
 
 ### 2.4 Try it out
 - Open https://console.dialogflow.com, select your project (agent) and select *see how it works in Google Assistant* on the left hand side
-
+- You can now test the assistant via the chat app and review the analytics on Apigee, e.g. with the traffic composition dashboard (https://apigee.com/platform/*{your_org}*/trafficcomposition)
 
