@@ -32,7 +32,8 @@ When promoted, enter your Apigee (1) `username`, (2) `password`, target (3) `org
 The previous script created a new file under the directory `/specs` as `hipster-shop-{your_org}-{your_env}.yaml`
 - Open the Edge UI and go to [Develop] > [Specs]
 - Under [+ Spec], choose `Import File` and select the file created
-- Verify that the specification `hipster-shop-{your_org}-{your_env}` has been added to the list
+- Select the `hipster-shop-{your_org}-{your_env}` spec which has been added to the list
+- Verify that the host attribute contains the desired organization and environment
 
 ###  1.4 Create API Portal
 To create a new API Portal, go to [Publish] > [Portals]
@@ -41,7 +42,7 @@ To create a new API Portal, go to [Publish] > [Portals]
 - Select [+ API]
 - Select the `Hipster Shop API Product` and hit [Next >]
 - Under `Spec Source`, select `Choose a different spec`, choose `hipster-shop-{your_org}-{your-env}` and hit [Select]
-- Set Audience = Anonymous users
+- Set Audience to `Anonymous users`
 - (Optional) Under Image, hit [Select] > [External Image], and paste the following URL: 
 `https://images.pexels.com/photos/1994/red-vintage-shoes-sport.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260`
 - Select [Add]
@@ -99,3 +100,8 @@ First of all, [create a new Dialogflow project](https://console.dialogflow.com/a
 - (Note: if the project can't be found, add/import the existing project ID into the Firebase console) 
 - Copy the URL of the `hipstershopFulfillment` function
 - Go to [Fulfillment] and paste the link into the URL field - hit [Save]
+
+### 2.4 Try it out
+- Open https://console.dialogflow.com, select your project (agent) and select *see how it works in Google Assistant* on the left hand side
+- You can now test the assistant via the chat app and review the analytics on Apigee, e.g. with the traffic composition dashboard (https://apigee.com/platform/*{your_org}*/trafficcomposition)
+
