@@ -1,6 +1,6 @@
 # Demo Add-Ons to ![hipster-apim-demo](https://github.com/mukundha/hipster-apim-demo)
 
-![In the previous steps](https://github.com/mukundha/hipster-apim-demo), the Hipster Shop Website has been deployed and configured as an Apigee-registered application. With an associated API Key, it consumes the API Product comprising services such as:
+[In the previous steps](https://github.com/mukundha/hipster-apim-demo), the Hipster Shop Website has been deployed and configured as an Apigee-registered application. With an associated API Key, it consumes the API Product comprising services such as:
 ```
 productcatalogservice.default.svc.cluster.local
 recommendationservice.default.svc.cluster.local
@@ -15,13 +15,13 @@ This repository contains the following add-ons to the previous demo:
 
 
 ## Prerequisites:
-- ![all steps from this repo](https://github.com/mukundha/hipster-apim-demo),
+- [all steps from this repo](https://github.com/mukundha/hipster-apim-demo),
 - apigeetool (https://www.npmjs.com/package/apigeetool)
 
 
 ## Add-Ons
 
-- ![Publishing the Hipster Shop REST API via Apigee API Management](https://github.com/mikesson/hipster-apim-demo-addons/managed-api)
+- [Publishing the Hipster Shop REST API via Apigee API Management](https://github.com/mikesson/hipster-apim-demo-addons/managed-api)
 
-- ![Deploying a chat/voice assistant appliation](https://github.com/mikesson/hipster-apim-demo-addons/assistant-api)
+- [Deploying a chat/voice assistant appliation](https://github.com/mikesson/hipster-apim-demo-addons/assistant-api)
 
