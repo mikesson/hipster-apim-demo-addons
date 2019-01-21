@@ -1,4 +1,4 @@
-# Demo Add-Ons to ![hipster-apim-demo](https://github.com/mukundha/hipster-apim-demo)
+# Demo Add-Ons to [hipster-apim-demo](https://github.com/mukundha/hipster-apim-demo)
 
 [In the previous steps](https://github.com/mukundha/hipster-apim-demo), the Hipster Shop Website has been deployed and configured as an Apigee-registered application. With an associated API Key, it consumes the API Product comprising services such as:
 ```
