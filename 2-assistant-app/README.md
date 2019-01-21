@@ -1,5 +1,3 @@
-# Add-On:
-
 ## 2. Deploying a chat/voice assistant appliation
 
 ###  2.1 DialogFlow - Import Project  

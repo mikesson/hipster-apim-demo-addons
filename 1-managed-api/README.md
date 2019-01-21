@@ -1,5 +1,3 @@
-
-# Add-On:
 ## 1. Publishing the Hipster Shop REST API via Apigee API Management
 
 ###  1.1 Store the Hipster Shop API's Gateway URL in an environment variable
