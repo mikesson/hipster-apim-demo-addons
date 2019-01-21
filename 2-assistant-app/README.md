@@ -1,6 +1,6 @@
 ## 2. Deploying a chat/voice assistant application
 
-For this demo, please make sure you have exposed the Hipster Shop API as [per these steps](https://github.com/mikesson/hipster-apim-demo-addons/tree/master/1-managed-api).
+For this demo, please make sure you have exposed the Hipster Shop API [as per these steps](https://github.com/mikesson/hipster-apim-demo-addons/tree/master/1-managed-api).
 
 ###  2.1 DialogFlow - Import Project  
 First of all, [create a new Dialogflow project](https://console.dialogflow.com/api-client/#/newAgent)
