@@ -6,7 +6,7 @@ productcatalogservice.default.svc.cluster.local
 recommendationservice.default.svc.cluster.local
 currencyservice.default.svc.cluster.local
 cartservice.default.svc.cluster.local
-(...)
+...
 ```
 
 This repository contains the following add-ons to the previous demo:
@@ -14,9 +14,9 @@ This repository contains the following add-ons to the previous demo:
 - Deploying a chat/voice assistant appliation consuming the REST API
 
 
-## Prerequisites:
-- [all steps from this repo](https://github.com/mukundha/hipster-apim-demo),
-- apigeetool (https://www.npmjs.com/package/apigeetool)
+## Prerequisites
+- all steps from [this repo](https://github.com/mukundha/hipster-apim-demo)
+- [apigeetool](https://www.npmjs.com/package/apigeetool) installed
 
 
 ## Add-Ons
