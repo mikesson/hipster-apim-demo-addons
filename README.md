@@ -1,4 +1,4 @@
-# Add-Ons to [hipster-apim-demo](https://github.com/mukundha/hipster-apim-demo)
+# Add-ons to [hipster-apim-demo](https://github.com/mukundha/hipster-apim-demo)
 
 [In the previous steps](https://github.com/mukundha/hipster-apim-demo), the Hipster Shop Website has been deployed and configured as an Apigee-registered application. With an associated API Key, it consumes the API Product comprising services such as:
 ```
@@ -21,7 +21,7 @@ This repository contains the following add-ons to the previous demo:
 
 ## Add-Ons
 
-- [Publishing the Hipster Shop REST API via Apigee API Management](https://github.com/mikesson/hipster-apim-demo-addons/1-managed-api)
+- [Publishing the Hipster Shop REST API via Apigee API Management](https://github.com/mikesson/hipster-apim-demo-addons/tree/master/1-managed-api)
 
-- [Deploying a chat/voice assistant appliation](https://github.com/mikesson/hipster-apim-demo-addons/2-assistant-api)
+- [Deploying a chat/voice assistant appliation](https://github.com/mikesson/hipster-apim-demo-addons/tree/master/2-assistant-app)
 
