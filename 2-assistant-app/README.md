@@ -1,4 +1,4 @@
-## 2. Deploying a chat/voice assistant appliation
+## 2. Deploying a chat/voice assistant application
 
 ###  2.1 DialogFlow - Import Project  
 First of all, [create a new Dialogflow project](https://console.dialogflow.com/api-client/#/newAgent)
