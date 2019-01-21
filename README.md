@@ -21,7 +21,7 @@ This repository contains the following add-ons to the previous demo:
 
 ## Add-Ons
 
-- [Publishing the Hipster Shop REST API via Apigee API Management](https://github.com/mikesson/hipster-apim-demo-addons/managed-api)
+- [Publishing the Hipster Shop REST API via Apigee API Management](https://github.com/mikesson/hipster-apim-demo-addons/1-managed-api)
 
-- [Deploying a chat/voice assistant appliation](https://github.com/mikesson/hipster-apim-demo-addons/assistant-api)
+- [Deploying a chat/voice assistant appliation](https://github.com/mikesson/hipster-apim-demo-addons/2-assistant-api)
 
